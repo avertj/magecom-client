@@ -1,0 +1,68 @@
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.centered(@width: 100%) {
+    margin-left: auto;
+    margin-right: auto;
+    width: @width;
+}
+
+body {
+    color: #000000;
+}
+
+a {
+    color: lighten(#000000, 40%);
+}
+    a:hover {
+    color: lighten(#000000, 60%);
+    }
+
+#page-wrap {
+    /*.centered(75%);*/
+
+    /*background-color: #55432D;*/
+}
+
+.logo {
+    width: @logo-size;
+    height: @logo-size;
+
+    .border-radius(ceil(@logo-size / 2));
+
+    background-color: blue;
+
+    .centered(@logo-size);
+}
+
+.search-input {
+    margin-top: 3px;
+}
+
+#footer {
+    color: #777;
+    text-align: center;
+}
+
+#sidebar.affix-top {
+    position: static;
+    margin-top:25px;
+    width:100%;
+}
+
+#sidebar.affix {
+    position: fixed;
+    top:25px;
+    width:25%;
+    padding-right: 30px;
+}
+
+#sidebar .form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@logo-size: 128px;

@@ -1,0 +1,45 @@
+body {
+  color: #000000;
+}
+a {
+  color: #666666;
+}
+a:hover {
+  color: #999999;
+}
+#page-wrap {
+  /*.centered(75%);*/
+  /*background-color: #55432D;*/
+}
+.logo {
+  height: 128px;
+  -webkit-border-radius: 64px;
+  -moz-border-radius: 64px;
+  border-radius: 64px;
+  background-color: blue;
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px;
+}
+.search-input {
+  margin-top: 3px;
+}
+#footer {
+  color: #777;
+  text-align: center;
+}
+#sidebar.affix-top {
+  position: static;
+  margin-top: 25px;
+  width: 100%;
+}
+#sidebar.affix {
+  position: fixed;
+  top: 25px;
+  width: 25%;
+  padding-right: 30px;
+}
+#sidebar .form-horizontal .form-group {
+  margin-left: 0px;
+  margin-right: 0px;
+}

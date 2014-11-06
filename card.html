@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Magecom Template</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dist/css/built.css">
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- <script src="dist/js/built.min.js"></script> -->
+
+        <script>
+            $(function() {
+                $('#sidebar').affix({
+                    offset: {
+                        top: $('header').height() + $('#menu').height()
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="page-wrap">
+            <header id="header" role="banner">
+                <!--<div class="logo"></div>-->
+            </header>
+
+            <div id="menu">
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">{I}</a>
+        </div>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="main.html">Home</a></li>
+                <li class="active"><a href="#">Cards</a></li>
+                <li><a href="#">Decks</a></li>
+                <li><a href="#">Combos</a></li>
+                <li><a href="#">Players</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="">My account</a></li>
+                        <li><a href="">My collection</a></li>
+                        <li><a href="">My decks</a></li>
+                        <li><a href="">My combos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+    </div>
+</nav>
+
+<!-- <ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Cards</a></li>
+    <li role="presentation"><a href="#">Decks</a></li>
+    <li role="presentation"><a href="#">Combos</a></li>
+    <li role="presentation"><a href="#">Players</a></li>
+    <li role="presentation" class="dropdown pull-right">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="">My account</a></li>
+            <li><a href="">My collection</a></li>
+            <li><a href="">My decks</a></li>
+            <li><a href="">My combos</a></li>
+            <li class="divider"></li>
+            <li><a href="">Logout</a></li>
+        </ul>
+    </li>
+    <li class="pull-right" role="presentation">
+        <form role="search">
+                <input type="text" class="search-input form-control" placeholder="Search">
+        </form>
+    </li>
+</ul>-->
+            </div>
+
+            <div id="content">
+
+                <!--<div class="jumbotron">
+                    <h1>Bienvenue</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nisi magna. Nam faucibus dolor sed tortor faucibus sodales sed id eros. Donec pellentesque eros non rhoncus pretium. Sed id neque nulla. Nullam vitae lacinia tellus, in euismod tellus. Praesent et mauris commodo sem auctor consectetur. Proin ultricies placerat justo, et ultricies risus commodo vitae. Cras ac purus <a href="">vitae dolor</a> molestie <a href="">vehicula</a>.
+                    </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>-->
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div id="sidebar">
+                                <h3>Recherche</h3>
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nom">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Type">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Texte">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="container-fluid">
+                                <p class="well">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nisi magna. Nam faucibus dolor sed tortor faucibus sodales sed id eros. Donec pellentesque eros non rhoncus pretium. Sed id neque nulla. Nullam vitae lacinia tellus, in euismod tellus. Praesent et mauris commodo sem auctor consectetur. Proin ultricies placerat justo, et ultricies risus commodo vitae. Cras ac purus vitae dolor molestie vehicula.
+                                </p>
+
+                                <h1>Popular cards</h1>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail" data-toggle="modal" data-target="#cardModal1">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail" data-toggle="modal" data-target="#cardModal2">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte long</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail" data-toggle="modal" data-target="#cardModal3">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte très long</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte très très long</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Brasier</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Cavalier de l'apocalypse</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Chèvre mortelle</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                            <a href="#" class="thumbnail">
+                                                <img src="http://lorempixel.com/223/310/abstract/" alt="...">
+                                                <div class="caption">
+                                                    <p>Nom de carte</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Sed vel ipsum lectus. <a href="">Mauris sed neque odio.</a> Praesent sit amet velit sit amet ex mollis lacinia sagittis sed est. Mauris porta felis et facilisis vehicula. Pellentesque vitae tellus bibendum, blandit lorem vel, feugiat magna. Sed lacinia vel nulla eu consequat. Nunc tempor ipsum vel dui consequat, et venenatis velit dictum. Sed eu quam massa. Suspendisse potenti. Aenean vehicula fringilla velit. Sed suscipit posuere sem et lobortis. Ut volutpat luctus tortor. Nullam posuere vel metus ornare scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed consectetur diam orci, non malesuada arcu convallis volutpat. Morbi vel metus enim.
+                                </p>
+
+                                <p>
+                                    Sed egestas massa augue, et maximus velit varius ultrices. Ut velit augue, varius eget metus ut, molestie ornare diam. Proin faucibus auctor dui, et feugiat neque auctor eu. <a href="">Pellentesque semper</a> velit elementum vestibulum pretium. Donec fringilla, justo ac elementum lacinia, mauris lacus interdum metus, non condimentum ipsum quam a nibh. Cras ac lorem orci. Curabitur tempus mattis mauris in aliquet. Aliquam porta condimentum nisi, nec mattis diam sagittis fermentum. Sed facilisis vestibulum finibus. Proin lacinia, augue ac finibus efficitur, quam felis imperdiet libero, in sagittis quam urna in metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla nisi, posuere nec mi et, rhoncus congue orci.
+                                </p>
+
+                                <p class="well">
+                                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam et mollis nunc. Nulla id justo vel libero consequat faucibus. Phasellus id eros sapien. Nullam finibus sed massa eget mollis. Suspendisse eget dignissim tellus. Aenean congue odio sit amet lectus cursus tincidunt. Vivamus at nisl quam. Etiam pulvinar velit ut faucibus malesuada. Fusce sed metus justo. Suspendisse molestie nisl eget facilisis ultrices. In urna ex, pharetra in purus non, vestibulum luctus ligula. Fusce justo tellus, sagittis a nisl quis, eleifend vulputate odio.
+                                </p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer" role="contentinfo">
+                <hr>
+                <div class="container">
+                    <p>
+                        Conditions - bla bla - legal - nia nia
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
