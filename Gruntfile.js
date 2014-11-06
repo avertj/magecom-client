@@ -4,20 +4,28 @@ module.exports = function(grunt) {
 
         less: {
             options: {
-                paths: 'css/less',
-                yuicompress: true
+                paths: 'css/less/'/*,
+                compress: true*/
             },
-            files: {
-                'css/style.css': 'css/less/style.less'
+            /*files: {
+                'css/style.css': 'css/less/template.less'
+            }*/
+            src: {
+                // no need for files, the config below should work
+                expand: true,
+                cwd:    'css/less/',
+                src:    '*.less',
+                dest:   'css/',
+                ext:    '.css'
             }
         },
 
         concat: {
             options: {
-                separator: ';',
+                separator: '\n',
             },
             css: {
-                src: ['css/animations.css', 'css/app.css'],
+                src: [/*'css/animations.css', 'css/app.css', */'css/template.css'],
                 dest: 'dist/css/built.css',
             },
             js: {
@@ -60,7 +68,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify')
     grunt.loadNpmTasks('grunt-exec')
 
-    grunt.registerTask('default', ['concat', 'uglify'])
+    grunt.registerTask('default', ['less', 'concat', 'uglify'])
     grunt.registerTask('install', ['exec:bower_install'])
-    grunt.registerTask('start', ['concat', 'uglify', 'exec:server_start'])
+    grunt.registerTask('start', ['less', 'concat', 'uglify', 'exec:server_start'])
 }
